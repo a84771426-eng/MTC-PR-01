@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Central de Ajuda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+  <header class="header">
+    <div class="header__left">
+      <img src="../img/logo-liv.png" alt="Logo LIV" class="header__logo" width="180" height="75">
+    </div>
+    <div class="header__right">
+      <button class="header__hamburger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-menu" data-menu-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  <nav id="primary-menu" class="mobile-menu" aria-label="Menu principal" data-mobile-menu>
+    <a href="../">Home</a>
+    <a href="../sobre-nos/">Sobre Nós</a>
+    <a href="../servicos/">Serviços</a>
+    <a href="./">Ajuda</a>
+    <a href="../atendimento/">Atendimento</a>
+    <a href="../blog/">Blog</a>
+    <a href="../contato/">Contato</a>
+    <a href="../privacidade/">Privacidade</a>
+    <a href="../termos/">Termos</a>
+  </nav>
+
+  <main id="main-content" class="main-content">
+    <section class="section hero-text">
+      <h1>Central de Ajuda</h1>
+      <p>Tire suas dúvidas sobre liberação de veículos.</p>
+    </section>
+
+    <section class="section">
+      <div class="faq-list">
+        <details><summary>O que é liberação de veículo?</summary><p>É o processo para regularização e retirada de um veículo retido ou apreendido, conforme regras do órgão responsável.</p></details>
+        <details><summary>Quando há cobrança de taxas?</summary><p>As cobranças podem ocorrer conforme o tipo de ocorrência e os procedimentos exigidos pelo órgão competente.</p></details>
+        <details><summary>Quais documentos podem ser exigidos?</summary><p>Os documentos variam por caso, mas geralmente incluem identificação pessoal, CRLV e comprovantes relacionados ao processo.</p></details>
+        <details><summary>Como buscar informações oficiais?</summary><p>Priorize sempre os canais oficiais dos Detrans estaduais e órgãos públicos em domínios governamentais.</p></details>
+        <details><summary>Como saber se um site é oficial?</summary><p>Verifique se o domínio é .gov.br e confira se as orientações coincidem com os canais públicos oficiais.</p></details>
+        <details><summary>O portal realiza a liberação do veículo?</summary><p>Não. O portal tem caráter exclusivamente informativo e não intermedia processos oficiais.</p></details>
+        <details><summary>O portal cobra alguma taxa?</summary><p>Não. O conteúdo disponibilizado no portal é gratuito.</p></details>
+        <details><summary>Onde posso confirmar valores e procedimentos?</summary><p>Nos sites oficiais dos Detrans estaduais e diretamente nos postos de atendimento oficiais.</p></details>
+        <details><summary>Como entrar em contato com o portal?</summary><p>Use os canais informados na página de contato e nos dados institucionais disponíveis no site.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <section class="footer-column">
+          <h3>Páginas</h3>
+          <ul>
+            <li><a href="../">Home</a></li>
+            <li><a href="../sobre-nos/">Sobre Nós</a></li>
+            <li><a href="../servicos/">Serviços</a></li>
+            <li><a href="./">Ajuda</a></li>
+            <li><a href="../atendimento/">Atendimento</a></li>
+            <li><a href="../blog/">Blog</a></li>
+            <li><a href="../contato/">Contato</a></li>
+          </ul>
+        </section>
+
+        <section class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="../privacidade/">Política de Privacidade</a></li>
+            <li><a href="../termos/">Termos de Uso</a></li>
+          </ul>
+        </section>
+
+        <section class="footer-column footer-company">
+          <h3>Dados da empresa</h3>
+          <p><strong>Razão Social:</strong> <span data-site="razaoSocial"></span></p>
+          <p><strong>Nome Fantasia:</strong> <span data-site="nomeFantasia"></span></p>
+          <p><strong>CNPJ:</strong> <span data-site="cnpj"></span></p>
+          <p><strong>Endereço:</strong> <span data-site="endereco"></span></p>
+          <p><strong>Telefone:</strong> <span data-site="telefone"></span></p>
+          <p><strong>E-mail:</strong> <span data-site="email"></span></p>
+          <p><strong>Encarregado (DPO):</strong> <span data-site="dpo"></span></p>
+        </section>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-site="ano"></span> <span data-site="razaoSocial"></span>. Todos os direitos reservados.</p>
+        <p>Este site possui caráter exclusivamente informativo e não possui vínculo oficial com órgãos públicos.</p>
+        <p>Logotipos e marcas de entidades exibidos neste site são meramente ilustrativos e informativos. Este portal não possui vínculo oficial com nenhuma entidade governamental.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../site-data.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
