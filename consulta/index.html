@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="consulta-page">
+  <a class="skip-link" href="#chat-input">Pular para o campo de resposta</a>
+  <main id="main-content" class="consulta-main">
+    <section
+      class="consulta-chat"
+      aria-label="Conversa de atendimento"
+      aria-live="polite"
+      aria-relevant="additions"
+      role="log"
+    >
+      <article class="consulta-message is-bot">
+        <img
+          src="./img/avatar.jpg"
+          alt=""
+          aria-hidden="true"
+          class="consulta-avatar"
+          width="36"
+          height="36"
+        >
+        <div class="consulta-bubble consulta-bubble--image">
+          <img
+            src="./img/emissao-guias.png"
+            alt="Cabeçalho de Emissão de Guias"
+            class="consulta-first-image"
+            width="540"
+            height="180"
+          >
+        </div>
+      </article>
+
+      <article class="consulta-message is-bot">
+        <img
+          src="./img/avatar.jpg"
+          alt=""
+          aria-hidden="true"
+          class="consulta-avatar"
+          width="36"
+          height="36"
+        >
+        <div class="consulta-bubble consulta-bubble--text">
+          Para iniciar o atendimento insira seu CPF:<br>
+          <strong>(Somente números)</strong>
+        </div>
+      </article>
+    </section>
+
+    <form
+      class="consulta-input-bar"
+      role="search"
+      aria-label="Resposta ao atendimento"
+      data-cpf-form
+    >
+      <input
+        id="chat-input"
+        type="tel"
+        placeholder="Insira seu CPF..."
+        aria-label="Campo de resposta"
+        autocomplete="off"
+        inputmode="numeric"
+        maxlength="14"
+        data-cpf-input
+      >
+      <button
+        type="submit"
+        aria-label="Enviar resposta"
+        data-cpf-submit
+      >
+        <span aria-hidden="true">&gt;</span>
+      </button>
+    </form>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>

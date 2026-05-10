@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+  <header class="header">
+    <div class="header__left">
+      <img src="../img/logo-liv.png" alt="Logo LIV" class="header__logo" width="180" height="75">
+    </div>
+    <div class="header__right">
+      <button class="header__hamburger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-menu" data-menu-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  <nav id="primary-menu" class="mobile-menu" aria-label="Menu principal" data-mobile-menu>
+    <a href="../">Home</a>
+    <a href="../sobre-nos/">Sobre Nós</a>
+    <a href="../servicos/">Serviços</a>
+    <a href="../ajuda/">Ajuda</a>
+    <a href="../atendimento/">Atendimento</a>
+    <a href="./">Blog</a>
+    <a href="../contato/">Contato</a>
+    <a href="../privacidade/">Privacidade</a>
+    <a href="../termos/">Termos</a>
+  </nav>
+
+  <main id="main-content" class="main-content">
+    <section class="section blog-listing">
+      <h2>Blog</h2>
+      <h3>Artigos informativos sobre liberação de veículos</h3>
+      <div class="cards-grid blog-list-grid">
+        <article class="card blog-card">
+          <p class="tag">Guia</p>
+          <p class="post-date">09/03/2026</p>
+          <h4>Como funciona a liberação de veículo?</h4>
+          <p>Entenda o passo a passo geral do processo de liberação de um veículo retido ou apreendido e saiba quais caminhos seguir.</p>
+          <a href="como-funciona-liberacao-veiculo/" class="read-more">Ler mais →</a>
+        </article>
+        <article class="card blog-card">
+          <p class="tag">Documentação</p>
+          <p class="post-date">07/03/2026</p>
+          <h4>Quais documentos podem ser exigidos na liberação?</h4>
+          <p>Conheça os principais documentos que costumam ser solicitados para liberar um veículo retido junto aos órgãos de trânsito.</p>
+          <a href="documentos-exigidos-liberacao/" class="read-more">Ler mais →</a>
+        </article>
+        <article class="card blog-card">
+          <p class="tag">Taxas</p>
+          <p class="post-date">04/03/2026</p>
+          <h4>Taxas comuns no processo de liberação de veículo</h4>
+          <p>Saiba quais taxas geralmente são cobradas durante o processo de liberação e como os valores costumam ser calculados.</p>
+          <a href="taxas-comuns-liberacao/" class="read-more">Ler mais →</a>
+        </article>
+        <article class="card blog-card">
+          <p class="tag">Segurança</p>
+          <p class="post-date">28/02/2026</p>
+          <h4>Diferença entre site oficial e portal informativo</h4>
+          <p>Aprenda a identificar se um site é oficial do governo ou se é um portal de conteúdo informativo como o nosso.</p>
+          <a href="site-oficial-vs-informativo/" class="read-more">Ler mais →</a>
+        </article>
+        <article class="card blog-card">
+          <p class="tag">Dicas</p>
+          <p class="post-date">24/02/2026</p>
+          <h4>O que fazer antes de pagar qualquer taxa</h4>
+          <p>Cuidados essenciais que você deve tomar antes de efetuar qualquer pagamento relacionado à liberação do seu veículo.</p>
+          <a href="antes-de-pagar-taxas/" class="read-more">Ler mais →</a>
+        </article>
+        <article class="card blog-card">
+          <p class="tag">Segurança</p>
+          <p class="post-date">19/02/2026</p>
+          <h4>Passo a passo para consultar informações de forma segura</h4>
+          <p>Guia prático para buscar informações confiáveis sobre liberação de veículos sem cair em golpes ou sites fraudulentos.</p>
+          <a href="consultar-informacoes-com-seguranca/" class="read-more">Ler mais →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <section class="footer-column">
+          <h3>Páginas</h3>
+          <ul>
+            <li><a href="../">Home</a></li>
+            <li><a href="../sobre-nos/">Sobre Nós</a></li>
+            <li><a href="../servicos/">Serviços</a></li>
+            <li><a href="../ajuda/">Ajuda</a></li>
+            <li><a href="../atendimento/">Atendimento</a></li>
+            <li><a href="./">Blog</a></li>
+            <li><a href="../contato/">Contato</a></li>
+          </ul>
+        </section>
+
+        <section class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="../privacidade/">Política de Privacidade</a></li>
+            <li><a href="../termos/">Termos de Uso</a></li>
+          </ul>
+        </section>
+
+        <section class="footer-column footer-company">
+          <h3>Dados da empresa</h3>
+          <p><strong>Razão Social:</strong> <span data-site="razaoSocial"></span></p>
+          <p><strong>Nome Fantasia:</strong> <span data-site="nomeFantasia"></span></p>
+          <p><strong>CNPJ:</strong> <span data-site="cnpj"></span></p>
+          <p><strong>Endereço:</strong> <span data-site="endereco"></span></p>
+          <p><strong>Telefone:</strong> <span data-site="telefone"></span></p>
+          <p><strong>E-mail:</strong> <span data-site="email"></span></p>
+          <p><strong>Encarregado (DPO):</strong> <span data-site="dpo"></span></p>
+        </section>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-site="ano"></span> <span data-site="razaoSocial"></span>. Todos os direitos reservados.</p>
+        <p>Este site possui caráter exclusivamente informativo e não possui vínculo oficial com órgãos públicos.</p>
+        <p>Logotipos e marcas de entidades exibidos neste site são meramente ilustrativos e informativos. Este portal não possui vínculo oficial com nenhuma entidade governamental.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../site-data.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

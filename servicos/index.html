@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+  <header class="header">
+    <div class="header__left">
+      <img src="../img/logo-liv.png" alt="Logo LIV" class="header__logo" width="180" height="75">
+    </div>
+    <div class="header__right">
+      <button class="header__hamburger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-menu" data-menu-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  <nav id="primary-menu" class="mobile-menu" aria-label="Menu principal" data-mobile-menu>
+    <a href="../">Home</a>
+    <a href="../sobre-nos/">Sobre Nós</a>
+    <a href="./">Serviços</a>
+    <a href="../ajuda/">Ajuda</a>
+    <a href="../atendimento/">Atendimento</a>
+    <a href="../blog/">Blog</a>
+    <a href="../contato/">Contato</a>
+    <a href="../privacidade/">Privacidade</a>
+    <a href="../termos/">Termos</a>
+  </nav>
+
+  <main id="main-content" class="main-content">
+    <section class="section hero-text">
+      <h1>Serviços</h1>
+      <p>Conteúdo informativo sobre liberação de veículos.</p>
+      <p>
+        O portal oferece orientações e conteúdos gratuitos para ajudá-lo a entender o processo de liberação de veículos.
+        Não executamos serviços públicos - nosso papel é exclusivamente informativo.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="cards-grid">
+        <article class="card">
+          <h4>Orientação sobre liberação</h4>
+          <p>Guias completos sobre como funciona o processo de liberação de veículo retido ou apreendido.</p>
+        </article>
+        <article class="card">
+          <h4>Explicação de taxas e custos</h4>
+          <p>Informações sobre as taxas mais comuns e como os valores costumam ser calculados.</p>
+        </article>
+        <article class="card">
+          <h4>Guia sobre documentos</h4>
+          <p>Saiba quais documentos são geralmente exigidos durante o processo de liberação.</p>
+        </article>
+        <article class="card">
+          <h4>Passos gerais do processo</h4>
+          <p>Passo a passo orientativo sobre as etapas mais comuns da liberação de veículos.</p>
+        </article>
+        <article class="card">
+          <h4>Suporte informativo</h4>
+          <p>Artigos, FAQs e conteúdos educativos para tirar suas dúvidas sobre o tema.</p>
+        </article>
+        <article class="card">
+          <h4>Acesso a canais oficiais</h4>
+          <p>Links e orientações para encontrar os canais oficiais dos órgãos de trânsito.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <section class="footer-column">
+          <h3>Páginas</h3>
+          <ul>
+            <li><a href="../">Home</a></li>
+            <li><a href="../sobre-nos/">Sobre Nós</a></li>
+            <li><a href="./">Serviços</a></li>
+            <li><a href="../ajuda/">Ajuda</a></li>
+            <li><a href="../atendimento/">Atendimento</a></li>
+            <li><a href="../blog/">Blog</a></li>
+            <li><a href="../contato/">Contato</a></li>
+          </ul>
+        </section>
+
+        <section class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="../privacidade/">Política de Privacidade</a></li>
+            <li><a href="../termos/">Termos de Uso</a></li>
+          </ul>
+        </section>
+
+        <section class="footer-column footer-company">
+          <h3>Dados da empresa</h3>
+          <p><strong>Razão Social:</strong> <span data-site="razaoSocial"></span></p>
+          <p><strong>Nome Fantasia:</strong> <span data-site="nomeFantasia"></span></p>
+          <p><strong>CNPJ:</strong> <span data-site="cnpj"></span></p>
+          <p><strong>Endereço:</strong> <span data-site="endereco"></span></p>
+          <p><strong>Telefone:</strong> <span data-site="telefone"></span></p>
+          <p><strong>E-mail:</strong> <span data-site="email"></span></p>
+          <p><strong>Encarregado (DPO):</strong> <span data-site="dpo"></span></p>
+        </section>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-site="ano"></span> <span data-site="razaoSocial"></span>. Todos os direitos reservados.</p>
+        <p>Este site possui caráter exclusivamente informativo e não possui vínculo oficial com órgãos públicos.</p>
+        <p>Logotipos e marcas de entidades exibidos neste site são meramente ilustrativos e informativos. Este portal não possui vínculo oficial com nenhuma entidade governamental.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../site-data.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
